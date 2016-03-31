@@ -1,0 +1,12 @@
+alias gp='git push'
+alias gs='git status'
+
+alias ll='ls -Al'
+alias ls='ls --color'
+
+alias vdf='vagrant destroy -f'
+alias vdfu='vagrant destroy -f && vagrant up'
+alias vh='vagrant halt'
+alias vs='vagrant status'
+alias vssh='vagrant ssh'
+alias vu='vagrant up'
