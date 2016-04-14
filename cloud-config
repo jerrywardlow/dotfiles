@@ -14,6 +14,7 @@ runcmd:
   - apt-get install -y fail2ban
   - apt-get install -y git
   - apt-get install -y htop
+  - apt-get install -y tree
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
   - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
