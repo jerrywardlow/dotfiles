@@ -1,0 +1,20 @@
+[user]
+	name = Jerry Wardlow
+	email = jerrylikesbikes@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = atom --wait
+	autocrlf = true
+[web]
+	browser = google-chrome
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[alias]
+	hist = log -20 --pretty=format:"%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]" --graph --decorate --all
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
