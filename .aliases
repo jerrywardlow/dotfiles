@@ -3,6 +3,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 
+alias du='du -h'
+
 alias gp='git push'
 alias gs='git status'
 
