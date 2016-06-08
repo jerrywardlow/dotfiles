@@ -5,6 +5,8 @@ alias ~='cd ~'
 
 alias du='du -h'
 
+alias dirs='dirs -v'
+
 alias gp='git push'
 alias gs='git status'
 
