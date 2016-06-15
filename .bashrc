@@ -7,4 +7,15 @@ if [ -a ${HOME}/.aliases ]; then
     . ${HOME}/.aliases
 fi
 
-export PS1="\[\e[1;35m\]\u\[\e[m\]\[\e[1;34m\]@\h\[\e[m\] \[\e[1;36m\]\W \\$ \[\e[m\]"
+
+# Prompt stuff
+
+# Colors
+green="\[\e[1;32m\]"
+cyan="\[\e[1;36m\]"
+blue="\[\e[1;34m\]"
+purple="\[\e[1;35m\]"
+yellow="\[\e[1;33m\]"
+reset="\[\e[m\]"
+
+export PS1="$purple\u$blue@\h $cyan\W \\$ $reset"
