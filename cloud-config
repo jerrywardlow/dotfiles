@@ -17,6 +17,8 @@ runcmd:
   - apt-get install -y tree
   - apt-get install -y python-pip
   - apt-get install -y vim
+  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc -P ~ # Pull down .vimrc from Github
+  - wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -P ~/.vim/colors/ # Adds vim color scheme
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
   - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
