@@ -18,4 +18,7 @@ purple="\[\e[1;35m\]"
 yellow="\[\e[1;33m\]"
 reset="\[\e[m\]"
 
-export PS1="$purple\u$blue@\h $cyan\W \\$ $reset"
+# Prompt
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
