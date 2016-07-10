@@ -8,5 +8,5 @@ RUN apt-get install -y \
             curl \
             git \
             tar \
-            wget \
-            vim
+            vim \
+            wget
