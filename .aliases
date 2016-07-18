@@ -23,3 +23,4 @@ alias vu='vagrant up'
 alias aplay='ansible-playbook'
 
 alias myip="curl http://ipecho.net/plain; echo"
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test100.zip"
