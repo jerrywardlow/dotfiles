@@ -13,9 +13,7 @@ users:
 runcmd:
   - apt-get install -y fail2ban
   - apt-get install -y git
-  - apt-get install -y htop
   - apt-get install -y tree
-  - apt-get install -y python-pip
   - apt-get install -y vim
   - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
   - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases
