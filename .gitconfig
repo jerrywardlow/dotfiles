@@ -6,7 +6,7 @@
 [core]
     editor = vim
 [push]
-    default = simple
+    default = upstream
 [merge]
     conflictstyle = diff3
 [alias]
