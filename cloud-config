@@ -15,11 +15,11 @@ runcmd:
   - apt-get install -y git
   - apt-get install -y tree
   - apt-get install -y vim
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc -P ~ # Pull down .vimrc from Github
-  - wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -P ~/.vim/colors/ # Adds vim color scheme
+  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc -P /home/jerry/
+  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases -P /home/jerry/
+  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh -P /home/jerry/
+  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc -P /home/jerry/ # Pull down .vimrc from Github
+  - wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -P /home/jerry/.vim/colors/ # Adds vim color scheme
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
   - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
