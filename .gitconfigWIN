@@ -6,8 +6,6 @@
 [core]
 	editor = atom --wait
 	autocrlf = true
-[web]
-	browser = google-chrome
 [push]
 	default = upstream
 [merge]
