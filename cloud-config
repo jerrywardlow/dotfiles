@@ -12,10 +12,10 @@ users:
 
 runcmd:
   - apt-get install -y fail2ban git tree vim
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc -P /home/jerry/
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases -P /home/jerry/
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh -P /home/jerry/
-  - wget https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc -P /home/jerry/ # Pull down .vimrc from Github
+  - curl -o /home/jerry/.bashrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
+  - curl -o /home/jerry/.aliases  https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases
+  - curl -o /home/jerry/.git-prompt.sh https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh
+  - curl -o /home/jerry/.vimrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc # Pull down .vimrc from Github
   - wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -P /home/jerry/.vim/colors/ # Adds vim color scheme
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
