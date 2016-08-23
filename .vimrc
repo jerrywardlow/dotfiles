@@ -13,3 +13,8 @@ set scrolloff=4
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 call plug#begin('~/.vim/plugged')
+
+" GitGutter
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
