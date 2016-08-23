@@ -10,8 +10,13 @@ users:
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuEuuSr006K3/+ITdGX0wbgehfY7xzo3OhPyrispqWgeuXTVG3GGGBuvSrv80V/waAB9jkc5hZv+wr0iDnF+F5HMmfAJbJPsXOcAOamFYHVcjAPxmlhrXC8xUKu1GucQ2/1VX7gjzdEvZyv9ReJgAoeVS5PE2E5oM0BDpE29iAX+1MsNFzpB06YnP2x5eHI47ZsD4qTW3SQmqYUPs6gSbTZdyUKsrDNEtPZ6blS3iNHq6kP0xIT/SgtYYIn2FfJXg0+FgFw9Rvy/78TA2j+TG1klBR53OmSg9lWDSplKIg8SNoJwmhkkSM0oSGKb7npTTi/S9xzwjyZRNmFUYZ1471 jerry@EXECUTOR
 
+packages:
+  - fail2ban
+  - git
+  - tree
+  - vim
+
 runcmd:
-  - apt-get install -y fail2ban git tree vim
   - curl -o /home/jerry/.bashrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
   - curl -o /home/jerry/.aliases  https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases
   - curl -o /home/jerry/.git-prompt.sh https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh
