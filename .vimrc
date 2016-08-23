@@ -18,4 +18,7 @@ call plug#begin('~/.vim/plugged')
 " GitGutter
 Plug 'airblade/vim-gitgutter'
 
+" Auto Pairs
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
