@@ -1,6 +1,4 @@
 syntax on
-colorscheme atom-dark-256
-set t_Co=256
 set showcmd
 filetype plugin indent on
 set tabstop=4
@@ -24,4 +22,10 @@ Plug 'jiangmiao/auto-pairs'
 " Fugitive
 Plug 'tpope/vim-fugitive'
 
+" Atom-Dark colorscheme
+Plug 'gosukiwi/vim-atom-dark'
+
 call plug#end()
+
+set t_Co=256
+colorscheme atom-dark-256
