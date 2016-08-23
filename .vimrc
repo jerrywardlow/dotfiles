@@ -21,4 +21,7 @@ Plug 'airblade/vim-gitgutter'
 " Auto Pairs
 Plug 'jiangmiao/auto-pairs'
 
+" Fugitive
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
