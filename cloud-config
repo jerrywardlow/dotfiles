@@ -22,7 +22,6 @@ runcmd:
   - curl -o /home/jerry/.git-prompt.sh https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh
   - curl -o /home/jerry/.vimrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc # Pull down .vimrc from Github
   - curl --create-dirs -o /home/jerry/.vim/autoload/plug.vim https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vim/autoload/plug.vim
-  - wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -P /home/jerry/.vim/colors/ # Adds vim color scheme
   - chown -R jerry:jerry /home/jerry/
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
