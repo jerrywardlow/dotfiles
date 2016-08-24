@@ -7,6 +7,8 @@ if [ -a ${HOME}/.aliases ]; then
     . ${HOME}/.aliases
 fi
 
+export VISUAL=vim
+export EDITOR=$VISUAL
 
 # Prompt stuff
 
