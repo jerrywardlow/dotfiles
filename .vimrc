@@ -25,6 +25,9 @@ Plug 'tpope/vim-fugitive'
 " Atom-Dark colorscheme
 Plug 'gosukiwi/vim-atom-dark'
 
+" HCL Format for Hashicorp stuff
+Plug 'fatih/vim-hclfmt'
+
 call plug#end()
 
 set t_Co=256
