@@ -7,6 +7,11 @@ if [ -a ${HOME}/.aliases ]; then
     . ${HOME}/.aliases
 fi
 
+# Load AWS credentials
+if [ -a ${HOME}/.aws_vars ]; then
+    . ${HOME}/.aws_vars
+fi
+
 export VISUAL=vim
 export EDITOR=$VISUAL
 
