@@ -25,6 +25,9 @@ Plug 'tpope/vim-fugitive'
 " Atom-Dark colorscheme
 Plug 'gosukiwi/vim-atom-dark'
 
+" Hashivim Terraform
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 
 set t_Co=256
