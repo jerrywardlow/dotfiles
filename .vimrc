@@ -10,6 +10,9 @@ set hidden
 set scrolloff=4
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
+
 " Start of vim-plug stuff
 call plug#begin('~/.vim/plugged')
 
