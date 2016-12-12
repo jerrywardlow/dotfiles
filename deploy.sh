@@ -7,4 +7,6 @@ do
     cp -R ./$item ~/$item
 done
 
+vim +PlugInstall +qall
+
 echo "Close enough!"
