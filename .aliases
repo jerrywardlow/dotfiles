@@ -10,7 +10,7 @@ alias dirs='dirs -v'
 alias gp='git push'
 alias gs='git status'
 
-alias ll='ls -Al'
+alias ll='ls -ahl'
 alias ls='ls --color'
 
 alias vdf='vagrant destroy -f'
