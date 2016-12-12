@@ -34,4 +34,4 @@ Plug 'hashivim/vim-terraform'
 call plug#end()
 
 set t_Co=256
-colorscheme atom-dark-256
+silent! colorscheme atom-dark-256
