@@ -15,6 +15,8 @@ packages:
   - git
   - tree
   - vim
+  - htop
+  - lynx
 
 runcmd:
   - curl -o /home/jerry/.bashrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
