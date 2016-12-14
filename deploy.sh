@@ -9,4 +9,6 @@ done
 
 vim +PlugInstall +qall
 
+source ~/.bashrc
+
 echo "Close enough!"
