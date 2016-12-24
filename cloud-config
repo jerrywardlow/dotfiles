@@ -6,18 +6,19 @@ users:
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     shell: /bin/bash
     lock-passwd: false
-    passwd: $6$rounds=666666$lowsodium$1XgqYAxXze69CaPh6FvxU14QGvp4n/NjZ.viwnAPHK1ZB8fHg7eMwkbefcsBZOX8NmvXfmYWhgIS.fujgQhJl/
+    passwd: $6$rounds=666666$hypertension$LxNM/PPbjauIBoXp0XPgOdYmr/jXvPwei133CZfbUxWoPR6U.JLAKyCFCln33ikGUWIQBEOPVCvLm.7hoHT.f1
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuEuuSr006K3/+ITdGX0wbgehfY7xzo3OhPyrispqWgeuXTVG3GGGBuvSrv80V/waAB9jkc5hZv+wr0iDnF+F5HMmfAJbJPsXOcAOamFYHVcjAPxmlhrXC8xUKu1GucQ2/1VX7gjzdEvZyv9ReJgAoeVS5PE2E5oM0BDpE29iAX+1MsNFzpB06YnP2x5eHI47ZsD4qTW3SQmqYUPs6gSbTZdyUKsrDNEtPZ6blS3iNHq6kP0xIT/SgtYYIn2FfJXg0+FgFw9Rvy/78TA2j+TG1klBR53OmSg9lWDSplKIg8SNoJwmhkkSM0oSGKb7npTTi/S9xzwjyZRNmFUYZ1471 jerry@EXECUTOR
 
 packages:
   - fail2ban
   - git
-  - tree
-  - vim
   - htop
   - lynx
   - smem
+  - tree
+  - unzip
+  - vim
 
 runcmd:
   - curl -o /home/jerry/.bashrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
