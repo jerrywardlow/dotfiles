@@ -22,7 +22,7 @@ packages:
 
 runcmd:
   - wget https://github.com/jerrywardlow/dotfiles/archive/master.zip -P /home/jerry/
-  - mkdir -p /home/jerry/dotfiles && unzip -j /home/jerry/master.zip -d /home/jerry/dotfiles
+  - unzip /home/jerry/master.zip -d /home/jerry/
   - chown -R jerry:jerry /home/jerry/
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
