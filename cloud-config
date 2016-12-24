@@ -21,11 +21,8 @@ packages:
   - vim
 
 runcmd:
-  - curl -o /home/jerry/.bashrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.bashrc
-  - curl -o /home/jerry/.aliases https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.aliases
-  - curl -o /home/jerry/.git-prompt.sh https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.git-prompt.sh
-  - curl -o /home/jerry/.vimrc https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vimrc # Pull down .vimrc from Github
-  - curl --create-dirs -o /home/jerry/.vim/autoload/plug.vim https://raw.githubusercontent.com/jerrywardlow/dotfiles/master/.vim/autoload/plug.vim
+  - wget https://github.com/jerrywardlow/dotfiles/archive/master.zip -P /home/jerry/
+  - mkdir -p /home/jerry/dotfiles && unzip -j /home/jerry/master.zip -d /home/jerry/dotfiles
   - chown -R jerry:jerry /home/jerry/
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
