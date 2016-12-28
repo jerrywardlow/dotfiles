@@ -7,6 +7,11 @@ do
     cp -R ./$item ~/$item
 done
 
+cp -R ./.ssh ~
+
+chmod 0700 ~/.ssh
+chmod 0600 ~/.ssh/authorized_keys
+
 vim +PlugInstall +qall
 
 source ~/.bashrc
