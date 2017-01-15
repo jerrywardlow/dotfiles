@@ -10,6 +10,7 @@ set hidden
 set scrolloff=4
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
+map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
@@ -30,6 +31,9 @@ Plug 'gosukiwi/vim-atom-dark'
 
 " Hashivim Terraform
 Plug 'hashivim/vim-terraform'
+
+" The NERD tree
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
