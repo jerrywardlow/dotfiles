@@ -10,6 +10,8 @@ set hidden
 set scrolloff=4
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
+set mouse=a
+
 map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
