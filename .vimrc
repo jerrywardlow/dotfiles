@@ -12,6 +12,13 @@ autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 
 
 set mouse=a
 
+" Start NERDTree if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Force NERDTree to show hidden files
+let NERDTreeShowHidden=1
+
 map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
