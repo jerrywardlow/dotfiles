@@ -10,6 +10,12 @@ set hidden
 set scrolloff=4
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
+" Vagrant syntax highlighting as ruby
+augroup vagrant
+    au!
+    au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
 set mouse=a
 
 " Start NERDTree if no file specified
