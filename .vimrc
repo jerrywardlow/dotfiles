@@ -29,6 +29,12 @@ map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
+" Easier split
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Start of vim-plug stuff
 call plug#begin('~/.vim/plugged')
 
