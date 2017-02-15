@@ -56,6 +56,9 @@ Plug 'hashivim/vim-terraform'
 " The NERD tree
 Plug 'scrooloose/nerdtree'
 
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 set t_Co=256
