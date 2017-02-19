@@ -16,3 +16,16 @@ yum_repos:
         enabled: true
         failovermethod: priority
         name: Extra Packages for Enterprise Linux 7
+
+packages:
+  - fail2ban
+  - git
+  - htop
+  - lynx
+  - smem
+  - tmux
+  - tree
+  - unzip
+  - vim
+  - wget
+
