@@ -2,14 +2,13 @@
 
 [ -z "$PS1" ] && return
 
-# Load aliases
-if [ -a ${HOME}/.aliases ]; then
-    . ${HOME}/.aliases
-fi
-
-# Load AWS credentials
-if [ -a ${HOME}/.aws_vars ]; then
-    . ${HOME}/.aws_vars
+# Load config files
+if [ -d "${HOME}/.conf.d" ];then
+    for file in ${HOME}/.conf.d/*; do
+        if [ -f "${file}" ]; then
+            . "${file}"
+        fi
+    done
 fi
 
 export VISUAL=vim
