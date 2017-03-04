@@ -29,3 +29,5 @@ packages:
   - vim
   - wget
 
+runcmd:
+  - wget https://github.com/jerrywardlow/dotfiles/archive/master.zip -P /home/jerry/
