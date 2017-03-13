@@ -10,13 +10,6 @@ users:
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuEuuSr006K3/+ITdGX0wbgehfY7xzo3OhPyrispqWgeuXTVG3GGGBuvSrv80V/waAB9jkc5hZv+wr0iDnF+F5HMmfAJbJPsXOcAOamFYHVcjAPxmlhrXC8xUKu1GucQ2/1VX7gjzdEvZyv9ReJgAoeVS5PE2E5oM0BDpE29iAX+1MsNFzpB06YnP2x5eHI47ZsD4qTW3SQmqYUPs6gSbTZdyUKsrDNEtPZ6blS3iNHq6kP0xIT/SgtYYIn2FfJXg0+FgFw9Rvy/78TA2j+TG1klBR53OmSg9lWDSplKIg8SNoJwmhkkSM0oSGKb7npTTi/S9xzwjyZRNmFUYZ1471 jerry@EXECUTOR
 
-yum_repos:
-    epel:
-        baseurl: http://mirror.n5tech.com/epel/7Server/x86_64/
-        enabled: true
-        failovermethod: priority
-        name: Extra Packages for Enterprise Linux 7
-
 packages:
   - fail2ban
   - git
@@ -28,6 +21,14 @@ packages:
   - unzip
   - vim
   - wget
+
+yum_repos:
+    epel:
+        baseurl: http://mirror.n5tech.com/epel/7Server/x86_64/
+        enabled: true
+        failovermethod: priority
+        name: Extra Packages for Enterprise Linux 7
+
 
 runcmd:
   - wget https://github.com/jerrywardlow/dotfiles/archive/master.zip -P /home/jerry/
