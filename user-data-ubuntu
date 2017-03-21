@@ -16,6 +16,7 @@ packages:
   - htop
   - lynx
   - smem
+  - strace
   - tmux
   - tree
   - unzip
