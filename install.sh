@@ -7,7 +7,8 @@ do
     ln -snf ./$item ~/$item
 done
 
-cp -R ./.ssh ~
+mkdir ~/.ssh
+curl https://github.com/jerrywardlow.keys >> ~/.ssh/authorized_keys
 
 chmod 0700 ~/.ssh
 chmod 0600 ~/.ssh/authorized_keys
