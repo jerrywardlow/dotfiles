@@ -4,7 +4,7 @@ set -e
 
 for item in .conf.d/ .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim/
 do
-    ln -snf ./$item ~/$item
+    ln -snf ~/dotfiles/$item ~
 done
 
 curl https://github.com/jerrywardlow.keys >> ~/.ssh/authorized_keys
