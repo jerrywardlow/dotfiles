@@ -2,7 +2,7 @@
 
 set -e
 
-for item in .conf.d/ .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim/
+for item in .conf.d .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim
 do
     ln -snf ~/dotfiles/$item ~
 done
