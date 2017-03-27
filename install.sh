@@ -4,7 +4,7 @@ set -e
 
 for item in .conf.d/ .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim/
 do
-    cp -R ./$item ~/$item
+    ln -snf ./$item ~/$item
 done
 
 cp -R ./.ssh ~
