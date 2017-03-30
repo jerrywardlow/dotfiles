@@ -8,6 +8,7 @@ set modeline
 set number
 set hidden
 set scrolloff=4
+set pastetoggle=<F2>
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 " Vagrant syntax highlighting as ruby
