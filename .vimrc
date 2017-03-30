@@ -9,6 +9,9 @@ set number
 set hidden
 set scrolloff=4
 set pastetoggle=<F2>
+
+cmap w!! w !sudo tee % >/dev/null
+
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 " Vagrant syntax highlighting as ruby
@@ -27,7 +30,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
 
 " Ignore .swp files in NERDTree
-let NERDTreeIgnore = ['\.swp$']
+let NERDTreeIgnore = ['\.swp$'u
 
 map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
