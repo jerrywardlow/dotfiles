@@ -2,9 +2,11 @@
 
 set -e
 
+DIR="$( cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 for item in .conf.d .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim
 do
-    ln -snf ~/dotfiles/$item ~
+    ln -snf $DIR/$item ~
 done
 
 curl https://github.com/jerrywardlow.keys >> ~/.ssh/authorized_keys
