@@ -30,7 +30,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
 
 " Ignore .swp files in NERDTree
-let NERDTreeIgnore = ['\.swp$'u
+let NERDTreeIgnore = ['\.swp$']
 
 map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
