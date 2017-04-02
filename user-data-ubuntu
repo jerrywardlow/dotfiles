@@ -29,7 +29,7 @@ apt_sources:
     - source: "ppa:ansible/ansible"
 
 runcmd:
-  - su jerry -c "git clone https:/github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
+  - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
   - su jerry -c "~/dotfiles/install.sh" 
   - chown -R jerry:jerry /home/jerry/
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
