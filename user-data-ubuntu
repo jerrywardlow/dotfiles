@@ -30,7 +30,7 @@ apt_sources:
 
 runcmd:
   - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
-  - su jerry -c "~/dotfiles/install.sh" 
+  - su jerry -c "~/dotfiles/install.sh"
   - chown -R jerry:jerry /home/jerry/
   - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
