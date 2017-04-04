@@ -10,5 +10,3 @@ do
 done
 
 vim +PlugInstall +qall
-
-source ~/.bashrc
