@@ -15,6 +15,7 @@ packages:
   - git
   - htop
   - lynx
+  - nmap
   - smem
   - strace
   - tmux
