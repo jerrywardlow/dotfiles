@@ -1,0 +1,2 @@
+alias klo="kitchen login"
+alias kco="kitchen converge"
