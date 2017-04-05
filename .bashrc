@@ -29,7 +29,5 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
 
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Tmux color fix
 alias tmux='tmux -2'
