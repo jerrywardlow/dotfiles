@@ -9,6 +9,7 @@ set number
 set hidden
 set scrolloff=4
 set pastetoggle=<F2>
+set noswapfile
 
 cmap w!! w !sudo tee % >/dev/null
 
