@@ -33,6 +33,9 @@ let NERDTreeShowHidden=1
 " Ignore .swp files in NERDTree
 let NERDTreeIgnore = ['\.swp$']
 
+" NERDTree Minimal UI
+let NERDTreeMinimalUI=1
+
 map <F1> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
