@@ -17,6 +17,7 @@ packages:
   - lynx
   - nmap
   - smem
+  - snapd
   - strace
   - tmux
   - tree
