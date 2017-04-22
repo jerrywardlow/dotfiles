@@ -20,3 +20,5 @@
     casm = commit -a -S -m
 [url "git@github.com:"]
     insteadOf = gh:
+[url "git@bitbucket.org:"]
+    insteadOf = bb:
