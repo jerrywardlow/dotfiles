@@ -7,21 +7,9 @@ alias du='du -h'
 
 alias dirs='dirs -v'
 
-alias gpl='git pull'
-alias gplr='git pull --rebase'
-alias gpu='git push'
-alias gs='git status'
-
 alias ll='ls -ahl'
 alias l='ll'
 alias ls='ls --color --almost-all'
-
-alias vdf='vagrant destroy -f'
-alias vdfu='vagrant destroy -f && vagrant up'
-alias vh='vagrant halt'
-alias vs='vagrant status'
-alias vssh='vagrant ssh'
-alias vu='vagrant up'
 
 alias tf='terraform'
 
