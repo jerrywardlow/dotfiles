@@ -38,3 +38,5 @@ runcmd:
   - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
   - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
   - service ssh restart
+
+final_message: "Total time: $UPTIME"
