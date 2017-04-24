@@ -17,12 +17,13 @@ export EDITOR=$VISUAL
 # Prompt stuff
 
 # Colors
-green="\[\e[1;32m\]"
 red="\[\e[1;31m\]"
-cyan="\[\e[1;36m\]"
+green="\[\e[1;32m\]"
+yellow="\[\e[1;33m\]"
 blue="\[\e[1;34m\]"
 purple="\[\e[1;35m\]"
-yellow="\[\e[1;33m\]"
+cyan="\[\e[1;36m\]"
+gray="\[\e[1;37m\]"
 reset="\[\e[m\]"
 
 # Prompt
