@@ -64,6 +64,9 @@ Plug 'gosukiwi/vim-atom-dark'
 " Hashivim Terraform
 Plug 'hashivim/vim-terraform'
 
+" Vim Polyglot
+Plug 'sheerun/vim-polyglot'
+
 " The NERD tree
 Plug 'scrooloose/nerdtree'
 
