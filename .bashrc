@@ -18,6 +18,7 @@ export EDITOR=$VISUAL
 
 # Colors
 green="\[\e[1;32m\]"
+red="\[\e[1;31m\]"
 cyan="\[\e[1;36m\]"
 blue="\[\e[1;34m\]"
 purple="\[\e[1;35m\]"
