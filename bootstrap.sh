@@ -26,3 +26,10 @@ id -u $USER &>/dev/null || useradd -G sudo -p $PASSWORD $USER
 curl https://github.com/jerrywardlow.keys >> /home/$USER/.ssh/authorized_keys
 su $USER -c "git clone https://github.com/jerrywardlow/dotfiles /home/$USER/dotfiles/"
 su $USER -c "/home/$USER/dotfiles/install.sh"
+
+# SSH
+
+sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
+sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
+echo "\nAllowUsers $USER" >> /etc/ssh/sshd_config
+service ssh restart
