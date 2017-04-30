@@ -23,3 +23,5 @@ then
 fi
 
 id -u $USER &>/dev/null || useradd -G sudo -p $PASS $USER
+
+curl https://github.com/jerrywardlow.keys >> /home/$USER/.ssh/authorized_keys
