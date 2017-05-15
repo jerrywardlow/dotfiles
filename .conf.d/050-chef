@@ -1,3 +1,4 @@
 alias klo="kitchen login"
 alias kco="kitchen converge"
 alias kli="kitchen list"
+alias kdest="kitchen destroy"
