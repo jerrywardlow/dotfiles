@@ -25,3 +25,5 @@ alias dockbomb='docker volume rm $(docker volume ls -f dangling=true -q)'
 alias douche='du -sh'
 
 alias vbox='vboxmanage'
+
+alias df='df -h'
