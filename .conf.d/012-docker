@@ -1,0 +1,5 @@
+alias dk='docker'
+
+alias dkpsa='docker ps -a'
+
+alias dockbomb='docker volume rm $(docker volume ls -f dangling=true -q)'
