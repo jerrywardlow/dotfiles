@@ -3,10 +3,10 @@
 [ -z "$PS1" ] && return
 
 # Load config files
-if [ -d "${HOME}/.conf.d" ];then
-    for file in ${HOME}/.conf.d/*; do
-        if [ -f "${file}" ]; then
-            . "${file}"
+if [ -d "$HOME/.conf.d" ];then
+    for file in $HOME/.conf.d/*; do
+        if [ -f "$file" ]; then
+            . "$file"
         fi
     done
 fi
