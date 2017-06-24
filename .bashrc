@@ -32,5 +32,8 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
 
+# Prompt override
+[ -f "$HOME/.ps1" ] && source "$HOME/.ps1"
+
 # Tmux color fix
 alias tmux='tmux -2'
