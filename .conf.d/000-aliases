@@ -22,6 +22,8 @@ alias danger='python -m SimpleHTTPServer 8000'
 
 alias douche='du -sh'
 
+alias free='free -h'
+
 alias vbox='vboxmanage'
 
 alias df='df -h'
