@@ -11,6 +11,8 @@ set scrolloff=4
 set pastetoggle=<F2>
 set noswapfile
 
+map Q <nop>
+
 cmap w!! w !sudo tee % >/dev/null
 
 autocmd FileType puppet,ruby,yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
