@@ -30,7 +30,12 @@ reset="\[\e[m\]"
 # Prompt
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
+
+if [ -n "$SSH_CLIENT" ]; then
+    export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
+else
+    export PS1="$purple\u$green\$(__git_ps1) $cyan\W \\$ $reset"
+fi
 
 # Prompt override
 [ -f "$HOME/.ps1" ] && source "$HOME/.ps1"
