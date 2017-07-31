@@ -33,6 +33,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 
 if [ -n "$SSH_CLIENT" ]; then
     export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
+    export AWS_KEY_OVERRIDE=true
 else
     export PS1="$purple\u$green\$(__git_ps1) $cyan\W \\$ $reset"
 fi
