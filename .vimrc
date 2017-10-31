@@ -12,6 +12,7 @@ set pastetoggle=<F2>
 set noswapfile
 set ignorecase
 set smartcase
+set incsearch
 
 map Q <nop>
 
