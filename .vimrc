@@ -10,6 +10,8 @@ set hidden
 set scrolloff=4
 set pastetoggle=<F2>
 set noswapfile
+set ignorecase
+set smartcase
 
 map Q <nop>
 
