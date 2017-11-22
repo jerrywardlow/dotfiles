@@ -78,6 +78,9 @@ Plug 'scrooloose/nerdtree'
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
 
+" Salt
+Plug 'saltstack/salt-vim'
+
 call plug#end()
 
 set t_Co=256
