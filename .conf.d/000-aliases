@@ -27,3 +27,5 @@ alias free='free -h'
 alias vbox='vboxmanage'
 
 alias df='df -h'
+
+alias treee="tree -C -a -I '.git'"
