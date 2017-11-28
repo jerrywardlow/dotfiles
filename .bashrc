@@ -24,7 +24,7 @@ blue="\[\e[1;34m\]"
 purple="\[\e[1;35m\]"
 cyan="\[\e[1;36m\]"
 gray="\[\e[1;37m\]"
-orange="\[\e[38;5;208m\]"
+orange="\[\e[0;38;5;208m\]"
 reset="\[\e[m\]"
 
 # Prompt
