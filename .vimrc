@@ -26,8 +26,6 @@ augroup vagrant
     au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
 
-set mouse=a
-
 " Start NERDTree if no file specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
