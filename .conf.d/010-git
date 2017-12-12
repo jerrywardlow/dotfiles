@@ -1,3 +1,4 @@
+alias gds='git diff --staged'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
 alias gpu='git push'
