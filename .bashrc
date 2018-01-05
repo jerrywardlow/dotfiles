@@ -14,6 +14,7 @@ fi
 # Local scripts
 export PATH=$PATH:~/bin
 
+# Editor stuff
 export VISUAL=vim
 export EDITOR=$VISUAL
 
@@ -30,10 +31,11 @@ gray="\[\e[1;37m\]"
 orange="\[\e[0;38;5;208m\]"
 reset="\[\e[m\]"
 
-# Prompt
+# Source git-prompt script
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+# Put hostname in prompt if remote connection
 if [ -n "$SSH_CLIENT" ]; then
     export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
     export AWS_KEY_OVERRIDE=true
@@ -41,7 +43,7 @@ else
     export PS1="$purple\u$green\$(__git_ps1) $cyan\W \\$ $reset"
 fi
 
-# Prompt override
+# Allow for prompt override
 [ -f "$HOME/.ps1" ] && source "$HOME/.ps1"
 
 # Tmux color fix
