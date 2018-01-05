@@ -11,6 +11,9 @@ if [ -d "$HOME/.conf.d" ];then
     done
 fi
 
+# Local scripts
+export PATH=$PATH:~/bin
+
 export VISUAL=vim
 export EDITOR=$VISUAL
 
