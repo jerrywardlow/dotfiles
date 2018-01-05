@@ -18,6 +18,9 @@ export PATH=$PATH:~/bin
 export VISUAL=vim
 export EDITOR=$VISUAL
 
+# Tmux color fix
+alias tmux='tmux -2'
+
 # Prompt stuff
 
 # Colors
@@ -45,6 +48,3 @@ fi
 
 # Allow for prompt override
 [ -f "$HOME/.ps1" ] && source "$HOME/.ps1"
-
-# Tmux color fix
-alias tmux='tmux -2'
