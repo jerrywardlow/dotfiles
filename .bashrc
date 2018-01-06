@@ -14,9 +14,6 @@ fi
 # Local scripts
 if ! [[ $PATH == *"$HOME/bin" ]]; then export PATH=$PATH:$HOME/bin; fi
 
-# Golang stuff
-if ! [[ $PATH == *"/usr/local/go/bin" ]] && [ -d "/usr/local/go/bin" ]; then export PATH=$PATH:/usr/local/go/bin; fi
-
 # Editor stuff
 export VISUAL=vim
 export EDITOR=$VISUAL
