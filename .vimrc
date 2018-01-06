@@ -36,7 +36,7 @@ let NERDTreeShowHidden=1
 " NERDTree Minimal UI
 let NERDTreeMinimalUI=1
 
-map <F1> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
