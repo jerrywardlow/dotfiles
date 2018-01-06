@@ -23,3 +23,5 @@
     insteadOf = gh:
 [url "git@bitbucket.org:"]
     insteadOf = bb:
+[url "jerry@git.wolfdrama.com:"]
+    insteadOf = wd:
