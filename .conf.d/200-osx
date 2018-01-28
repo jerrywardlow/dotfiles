@@ -1,0 +1,5 @@
+# OSX overrides
+if [ $(uname) = "Darwin" ]; then
+    alias ll='ls -aGhl'
+    alias ls='ls -AG'
+fi
