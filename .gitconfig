@@ -17,6 +17,7 @@
     co = checkout
     br = branch
     cm = commit -m
+    csm = commit -S -m
     cam = commit -a -m
     casm = commit -a -S -m
 [url "git@github.com:"]
