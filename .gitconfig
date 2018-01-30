@@ -27,3 +27,5 @@
     insteadOf = bb:
 [url "jerry@git.wolfdrama.com:"]
     insteadOf = wd:
+[url "git@github.com:Expensify/"]
+    insteadOf = ex:
