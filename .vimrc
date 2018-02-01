@@ -34,6 +34,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Force NERDTree to show hidden files
 let NERDTreeShowHidden=1
 
+" NERDTree ignore .pyc files
+let NERDTreeIgnore = ['\.pyc$']
+
 " NERDTree Minimal UI
 let NERDTreeMinimalUI=1
 
