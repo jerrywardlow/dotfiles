@@ -184,6 +184,10 @@
       "Text" : "0x02 0x6A",
       "Action" : 11
     },
+    "0x5b-0x100000" : {
+      "Text" : "0x02 0x5B",
+      "Action" : 11
+    },
     "0x6b-0x100000" : {
       "Text" : "0x02 0x6B",
       "Action" : 11
