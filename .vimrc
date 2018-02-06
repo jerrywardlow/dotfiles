@@ -82,5 +82,8 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
+" Template syntax highlighting as sh
+autocmd BufRead,BufNewFile *.template set syntax=sh
+
 set t_Co=256
 silent! colorscheme atom-dark-256
