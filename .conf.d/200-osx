@@ -3,6 +3,9 @@ if [ $(uname) = "Darwin" ]; then
     alias ll='ls -aGhl'
     alias ls='ls -AG'
     
+    # GNU grep required
+    alias grepc='grep --color=always'
+
     # Source bash_completion
     if [ -f $(brew --prefix)/etc/bash_completion  ]; then
       . $(brew --prefix)/etc/bash_completion
