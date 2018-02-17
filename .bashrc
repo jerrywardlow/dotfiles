@@ -35,8 +35,10 @@ orange="\[\e[0;38;5;208m\]"
 reset="\[\e[m\]"
 
 # Source git-prompt script
-source ~/.git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
+if [ -f ~/.git-prompt.sh ]; then
+    source ~/.git-prompt.sh
+    export GIT_PS1_SHOWDIRTYSTATE=1
+fi
 
 # Put hostname in prompt if remote connection
 if [ -n "$SSH_CLIENT" ]; then
