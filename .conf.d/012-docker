@@ -2,6 +2,8 @@ alias dk='docker'
 
 alias dkpsa='docker ps -a'
 
+alias dkimg='docker images'
+
 alias dkrmi='docker rmi'
 
 alias dockbomb='docker volume rm $(docker volume ls -f dangling=true -q)'
