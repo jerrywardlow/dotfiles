@@ -29,7 +29,6 @@ packages:
 apt_sources:
     - source: "ppa:ubuntu-lxc/lxd-stable"
     - source: "ppa:ubuntu-lxc/lxc-stable"
-    - source: "ppa:ansible/ansible"
 
 runcmd:
   - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
