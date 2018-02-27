@@ -1,0 +1,5 @@
+alias vbox='vboxmanage'
+
+alias vboxrng='vboxmanage list runningvms'
+
+alias vboxvms='vboxmanage list vms'
