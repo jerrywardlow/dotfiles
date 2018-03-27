@@ -14,6 +14,7 @@ set noswapfile
 set ignorecase
 set smartcase
 set incsearch
+set ruler
 
 map Q <nop>
 
