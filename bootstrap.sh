@@ -4,10 +4,12 @@ set -e
 
 # Dependencies
 
-if ! hash yum 2>/dev/null; then
+if hash apt 2>/dev/null; then
     apt install -y git
-else
+elif hash yum 2>/dev/null; then
     yum install -y git
+elif hash dnf 2>/dev/null; then
+    dnf install -y git
 fi
 
 # User
