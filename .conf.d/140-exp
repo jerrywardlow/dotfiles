@@ -1,1 +1,3 @@
-# Placeholder, for now...
+# Fabric
+alias fabg='fab -g bastion1.sc'
+alias fabgp='fabg -g bastion1.sc -P -z 10'
