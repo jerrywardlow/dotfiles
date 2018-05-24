@@ -1,3 +1,34 @@
 # Fabric
 alias fabg='fab -g bastion1.sc'
+alias fabgh='fab -g bastion1.sc -H'
 alias fabgp='fabg -g bastion1.sc -P -z 10'
+alias fabgph='fabg -g bastion1.sc -P -z 10 -H'
+
+function sendkey() {
+    deactivate_venv=true
+
+    # Check if virtualenv is activated
+    if [[ $PS1 = *"(venv)"*  ]]; then
+        deactivate_venv=false
+    fi
+
+    cd ~/work/Ops-Configs/saltfab/
+    source venv/bin/activate
+
+    fab -g bastion1.sc -H $1 bedrock.sendAuthKey
+
+    # Deactivate virtualenv if it wasn't previously activated
+    if [[ "$deactivate_venv" = true ]]; then
+        deactivate
+    fi
+
+    cd -
+}
+
+function fabmeup() {
+    cd ~/work/ops/saltfab/
+    source venv/bin/activate
+}
+
+export -f sendkey
+export -f fabmeup
