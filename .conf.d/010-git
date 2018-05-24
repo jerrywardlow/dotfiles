@@ -1,6 +1,6 @@
+alias gs='git status'
+alias gpu='git push'
 alias gds='git diff --staged'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
-alias gpu='git push'
-alias gs='git status'
 alias gcob='git checkout master && git pull && git co -b'
