@@ -30,3 +30,5 @@ alias free='free -h'
 alias df='df -h'
 
 alias treee="tree -C -a -I '.git'"
+
+alias acp="apt-cache policy"
