@@ -4,6 +4,10 @@ alias fabgh='fab -g bastion1.sc -H'
 alias fabgp='fabg -g bastion1.sc -P -z 10'
 alias fabgph='fabg -g bastion1.sc -P -z 10 -H'
 
+alias sshla='ssh -J bastion1.la'
+alias sshlv='ssh -J bastion1.lv'
+alias sshsc='ssh -J bastion1.sc'
+
 function sendkey() {
     deactivate_venv=true
 
