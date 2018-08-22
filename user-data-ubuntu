@@ -7,7 +7,8 @@ users:
     shell: /bin/bash
     lock-passwd: false
     passwd: $6$rounds=666666$hypertension$LxNM/PPbjauIBoXp0XPgOdYmr/jXvPwei133CZfbUxWoPR6U.JLAKyCFCln33ikGUWIQBEOPVCvLm.7hoHT.f1
-    ssh-import-id: gh:jerrywardlow
+    ssh-import-id:
+      - gh:jerrywardlow
 
 packages:
   - fail2ban
