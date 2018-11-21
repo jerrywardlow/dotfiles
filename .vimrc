@@ -91,3 +91,8 @@ set t_Co=256
 silent! colorscheme atom-dark-256
 
 set updatetime=100
+
+" Reload gitgutter on save
+let g:gitgutter_realtime=1
+let g:gitgutter_eager=1
+let g:gitgutter_terminal_reports_focus=0
