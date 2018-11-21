@@ -50,3 +50,7 @@ fi
 
 # Allow for prompt override
 [ -f "$HOME/.ps1" ] && source "$HOME/.ps1"
+
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+shopt -s histappend
