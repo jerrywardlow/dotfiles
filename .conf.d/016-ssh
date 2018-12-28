@@ -1,0 +1,5 @@
+function scpedit() {
+    vim scp://$1/$2 
+}
+
+export -f scpedit
