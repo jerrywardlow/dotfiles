@@ -4,7 +4,9 @@ set -e
 
 DIR="$( cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-for item in .conf.d .bashrc .git-prompt.sh .gitconfig .tmux.conf .vimrc .vim
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+
+for item in .conf.d .bashrc .gitconfig .tmux.conf .vimrc .vim
 do
     ln -snf $DIR/$item ~
 done
