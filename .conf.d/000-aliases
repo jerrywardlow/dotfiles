@@ -17,6 +17,7 @@ alias ls='ls --color --almost-all'
 alias tf='terraform'
 
 alias aplay='ansible-playbook'
+alias avault='ansible-vault'
 
 alias myip="curl http://ipecho.net/plain; echo"
 alias speedtest="wget -O /dev/null http://speedtest.sea01.softlayer.com/downloads/test100.zip"
