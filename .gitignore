@@ -1,3 +1,4 @@
 .vim/plugged*
 .conf.d/aws
 .conf.d/999-secure
+.git-prompt.sh
