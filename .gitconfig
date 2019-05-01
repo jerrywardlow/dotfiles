@@ -35,3 +35,6 @@
     insteadOf = ex:
 [url "git@github.com:learntouselinux/"]
     insteadOf = lt:
+
+[diff "ansible-vault"]
+	textconv = ansible-vault view
