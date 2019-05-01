@@ -15,6 +15,8 @@ set ignorecase
 set smartcase
 set incsearch
 set ruler
+set exrc
+set secure
 
 map Q <nop>
 
