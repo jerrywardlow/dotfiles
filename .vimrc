@@ -7,6 +7,7 @@ set expandtab
 set autoindent
 set modeline
 set number
+set numberwidth=3
 set hidden
 set scrolloff=4
 set pastetoggle=<F2>
