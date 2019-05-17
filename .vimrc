@@ -18,6 +18,7 @@ set incsearch
 set ruler
 set exrc
 set secure
+set backspace=indent,eol,start
 
 map Q <nop>
 
