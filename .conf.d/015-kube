@@ -1,1 +1,2 @@
 alias kube='kubectl'
+alias k='kubectl'
