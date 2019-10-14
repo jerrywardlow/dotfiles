@@ -26,10 +26,6 @@ packages:
   - vim
   - wget
 
-apt_sources:
-    - source: "ppa:ubuntu-lxc/lxd-stable"
-    - source: "ppa:ubuntu-lxc/lxc-stable"
-
 runcmd:
   - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
   - su jerry -c "~/dotfiles/install.sh"
