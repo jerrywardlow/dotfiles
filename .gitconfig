@@ -4,6 +4,8 @@
     signingkey = AA33EBC5CCA5F962
 [color]
     ui = true
+[color "status"]
+    changed = yellow
 [core]
     editor = vim
 	excludefile = /home/jerry/.gitignore_global
