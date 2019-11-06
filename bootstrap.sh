@@ -32,4 +32,4 @@ su $NEWUSER -c "/home/$NEWUSER/dotfiles/install.sh"
 sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
 sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
 echo "\nAllowUsers $NEWUSER" >> /etc/ssh/sshd_config
-service ssh restart
+systemctl restart ssh
