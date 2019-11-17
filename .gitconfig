@@ -8,7 +8,7 @@
     changed = yellow
 [core]
     editor = vim
-	excludefile = /home/jerry/.gitignore_global
+    excludefile = /home/jerry/.gitignore_global
 [push]
     default = upstream
 [merge]
