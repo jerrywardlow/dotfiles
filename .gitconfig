@@ -1,7 +1,7 @@
 [user]
     email = jerry@jerryoftheyear.com
     name = Jerry Wardlow
-    signingkey = AA33EBC5CCA5F962
+    signingkey = B1089B212A977CC1C9D1E7A2AA33EBC5CCA5F962
 [color]
     ui = true
 [color "status"]
