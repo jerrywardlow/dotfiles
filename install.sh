@@ -12,7 +12,7 @@ mkdir -p ~/.vim/autoload/
 # Pull most recent version of vim-plug plugin manager
 curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > ~/.vim/autoload/plug.vim
 
-for item in .conf.d .bashrc .gitconfig .tmux.conf .vimrc .vim
+for item in .conf.d .bashrc .gitconfig .tmux.conf .vimrc
 do
     ln -snf $DIR/$item ~
 done
