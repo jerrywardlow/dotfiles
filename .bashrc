@@ -54,3 +54,7 @@ fi
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 shopt -s histappend
+
+# Allow pinentry-curses with tmux
+GPG_TTY=$(tty)
+export GPG_TTY
