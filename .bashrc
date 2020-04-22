@@ -43,7 +43,6 @@ fi
 # Put hostname in prompt if remote connection
 if [ -n "$SSH_CLIENT" ]; then
     export PS1="$purple\u$blue@\h$green\$(__git_ps1) $cyan\W \\$ $reset"
-    export AWS_KEY_OVERRIDE=true
 else
     export PS1="$purple\u$green\$(__git_ps1) $cyan\W \\$ $reset"
 fi
