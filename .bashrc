@@ -18,9 +18,6 @@ if ! [[ $PATH == *"$HOME/bin" ]]; then export PATH=$PATH:$HOME/bin; fi
 export VISUAL=vim
 export EDITOR=$VISUAL
 
-# Tmux color fix
-alias tmux='tmux -2'
-
 # Prompt stuff
 
 # Colors
