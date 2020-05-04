@@ -1,5 +1,4 @@
 .vim/*
-.conf.d/aws
 .conf.d/500-local
 .conf.d/999-secure
 .git-prompt.sh
