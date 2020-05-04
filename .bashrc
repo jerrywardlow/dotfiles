@@ -12,7 +12,7 @@ if [ -d "$HOME/.conf.d" ];then
 fi
 
 # Local scripts
-if ! [[ $PATH == *"$HOME/bin"* ]]; then export PATH=$PATH:$HOME/bin; fi
+if ! [[ $PATH == *"$HOME/bin"* ]]; then export PATH=$HOME/bin:$PATH; fi
 
 # Editor stuff
 export VISUAL=vim
