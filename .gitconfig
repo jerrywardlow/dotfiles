@@ -6,6 +6,8 @@
     ui = true
 [color "status"]
     changed = yellow
+[commit]
+    gpgsign = true
 [core]
     editor = vim
     excludefile = /home/jerry/.gitignore_global
