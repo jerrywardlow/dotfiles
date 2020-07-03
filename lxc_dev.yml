@@ -10,9 +10,6 @@ config:
         lock-passwd: false                     
         passwd: $6$rounds=666666$hypertension$LxNM/PPbjauIBoXp0XPgOdYmr/jXvPwei133CZfbUxWoPR6U.JLAKyCFCln33ikGUWIQBEOPVCvLm.7hoHT.f1
         ssh-import-id: gh:jerrywardlow
-    runcmd:            
-      - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config                                      
-      - service ssh restart                    
 description: dev profile                       
 devices:               
   eth0:                
