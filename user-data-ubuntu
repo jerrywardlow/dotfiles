@@ -34,7 +34,5 @@ runcmd:
   - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
   - su jerry -c "~/dotfiles/install.sh"
   - chown -R jerry:jerry /home/jerry/
-  - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
-  - service ssh restart
 
 final_message: "Total time: $UPTIME"
