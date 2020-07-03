@@ -26,12 +26,14 @@ packages:
   - vim
   - wget
 
+# Configure sshd
+disable_root: true
+ssh_pwauth: false
+
 runcmd:
   - su jerry -c "git clone https://github.com/jerrywardlow/dotfiles /home/jerry/dotfiles/"
   - su jerry -c "~/dotfiles/install.sh"
   - chown -R jerry:jerry /home/jerry/
-  - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
-  - sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
   - echo "\nAllowUsers jerry" >> /etc/ssh/sshd_config
   - service ssh restart
 
