@@ -37,6 +37,8 @@
     insteadOf = wd:
 [url "git@github.com:learntouselinux/"]
     insteadOf = lt:
+[url "git@bitbucket.org:packetfabric/"]
+    insteadOf = pf:
 
 [diff "ansible-vault"]
 	textconv = ansible-vault view
