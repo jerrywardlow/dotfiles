@@ -42,3 +42,6 @@
 
 [diff "ansible-vault"]
 	textconv = ansible-vault view
+[diff "gpg"]
+    textconv = gpg --quiet --batch --use-agent --decrypt
+    cachetextconv = false
