@@ -11,6 +11,8 @@
 [core]
     editor = vim
     excludefile = /home/jerry/.gitignore_global
+[pull]
+    rebase = false
 [push]
     default = upstream
 [merge]
