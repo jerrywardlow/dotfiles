@@ -1,24 +1,24 @@
-config:                
-  user.user-data: |    
-    #cloud-config      
-    users:             
-      - name: jerry    
-        gecos: jerry   
-        groups: sudo   
-        sudo: ['ALL=(ALL) NOPASSWD:ALL']       
-        shell: /bin/bash                       
-        lock-passwd: false                     
+config:
+  user.user-data: |
+    #cloud-config
+    users:
+      - name: jerry
+        gecos: jerry
+        groups: sudo
+        sudo: ['ALL=(ALL) NOPASSWD:ALL']
+        shell: /bin/bash
+        lock-passwd: false
         passwd: $6$rounds=666666$hypertension$LxNM/PPbjauIBoXp0XPgOdYmr/jXvPwei133CZfbUxWoPR6U.JLAKyCFCln33ikGUWIQBEOPVCvLm.7hoHT.f1
         ssh-import-id: gh:jerrywardlow
-description: dev profile                       
-devices:               
-  eth0:                
-    nictype: bridged   
-    parent: lxdbr0     
-    type: nic          
-  root:                
-    path: /            
-    pool: default      
-    type: disk         
-name: dev              
+description: dev profile
+devices:
+  eth0:
+    nictype: bridged
+    parent: lxdbr0
+    type: nic
+  root:
+    path: /
+    pool: default
+    type: disk
+name: dev
 used_by: []
