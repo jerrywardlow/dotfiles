@@ -2,7 +2,7 @@
 if [ $(uname) = "Darwin" ]; then
     alias ll='ls -aGhl'
     alias ls='ls -AG'
-    
+
     # GNU grep required
     alias grep='grep --color=always'
 
