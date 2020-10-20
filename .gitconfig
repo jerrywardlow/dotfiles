@@ -15,7 +15,7 @@
     default = upstream
 [merge]
     conflictstyle = diff3
-	tool = vimdiff
+    tool = vimdiff
 [alias]
     hist = log -20 --pretty=format:"%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]" --graph --decorate --all
     co = checkout
@@ -39,7 +39,7 @@
     insteadOf = pf:
 
 [diff "ansible-vault"]
-	textconv = ansible-vault view
+    textconv = ansible-vault view
 [diff "gpg"]
     textconv = gpg --quiet --batch --use-agent --decrypt
     cachetextconv = false
