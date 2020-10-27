@@ -88,6 +88,9 @@ Plug 'editorconfig/editorconfig-vim'
 " Salt
 Plug 'saltstack/salt-vim'
 
+" GPG
+Plug 'jamessan/vim-gnupg'
+
 call plug#end()
 
 " Template syntax highlighting as sh
