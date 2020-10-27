@@ -19,6 +19,8 @@ set ruler
 set exrc
 set secure
 set backspace=indent,eol,start
+set list
+set listchars=tab:T>,trail:~
 
 map Q <nop>
 
@@ -93,6 +95,7 @@ autocmd BufRead,BufNewFile *.template set syntax=sh
 
 set t_Co=256
 silent! colorscheme atom-dark-256
+highlight SpecialKey ctermfg=red
 
 set updatetime=100
 
