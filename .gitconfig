@@ -19,7 +19,7 @@
     conflictstyle = diff3
     tool = vimdiff
 [alias]
-    hist = log -20 --pretty=format:"%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]" --graph --decorate --all
+    hist = log -20 --pretty=format:"%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]\\ %Cblue(%G?)" --graph --decorate --all
     co = checkout
     br = branch
     cm = commit -m
