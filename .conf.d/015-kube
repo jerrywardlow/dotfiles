@@ -1,6 +1,9 @@
 alias k='kubectl'
+alias kj='kubectl -o json'
+alias kw='kubectl -o wide'
+alias ky='kubectl -o yaml'
 alias kx='kubectx'
 alias kns='kubens'
 
-complete -F __start_kubectl k
+complete -F __start_kubectl k kj kw ky
 complete -F _kube_contexts kx
