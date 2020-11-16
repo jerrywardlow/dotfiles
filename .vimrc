@@ -113,3 +113,8 @@ let g:gitgutter_terminal_reports_focus=0
 
 " All folds open by default
 set foldlevelstart=99
+
+" Automatically fold SOPS related YAML keys
+augroup sops
+    autocmd BufRead,BufNewFile *.yaml,*.yml silent! global/sops\:/foldclose | normal gg
+augroup END
