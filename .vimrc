@@ -109,3 +109,6 @@ set updatetime=100
 let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
 let g:gitgutter_terminal_reports_focus=0
+
+" All folds open by default
+set foldlevelstart=99
