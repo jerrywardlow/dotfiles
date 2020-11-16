@@ -51,6 +51,7 @@ map <F2> :NERDTreeToggle<CR>
 map <F3> :set invnumber<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+nnoremap <F9> zA
 
 " Easier split
 nnoremap <C-J> <C-W><C-J>
