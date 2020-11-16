@@ -91,6 +91,9 @@ Plug 'saltstack/salt-vim'
 " GPG
 Plug 'jamessan/vim-gnupg'
 
+" YAML folds
+Plug 'pedrohdz/vim-yaml-folds'
+
 call plug#end()
 
 " Template syntax highlighting as sh
