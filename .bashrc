@@ -12,6 +12,7 @@ if [ -d "$HOME/.conf.d" ];then
 fi
 
 # Local scripts
+if ! [[ $PATH == *"$HOME/.local/bin"* ]]; then export PATH=$HOME/.local/bin:$PATH; fi
 if ! [[ $PATH == *"$HOME/bin"* ]]; then export PATH=$HOME/bin:$PATH; fi
 
 # Editor stuff
