@@ -37,7 +37,7 @@
     insteadOf = bb:
 [url "git@github.com:learntouselinux/"]
     insteadOf = lt:
-[url "git@bitbucket.org:packetfabric/"]
+[url "git@github.com:PacketFabric/"]
     insteadOf = pf:
 
 [diff "ansible-vault"]
