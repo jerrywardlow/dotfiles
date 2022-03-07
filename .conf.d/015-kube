@@ -7,5 +7,3 @@ alias kns='kubens'
 
 complete -F __start_kubectl k kj kw ky
 complete -F _kube_contexts kx
-
-if ! [[ $PATH == *"$HOME/.krew/bin"* ]] && [ -d "$HOME/.krew/bin" ]; then export PATH=$PATH:$HOME/.krew/bin; fi
