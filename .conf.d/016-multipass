@@ -1,0 +1,3 @@
+alias mp='multipass'
+
+complete -F _multipass_complete mp
