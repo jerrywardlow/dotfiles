@@ -32,3 +32,5 @@ alias df='df -h'
 alias treee="tree -C -a -I '.git'"
 
 alias acp="apt-cache policy"
+
+alias genpass="gpg --gen-random --armor 2 30"
