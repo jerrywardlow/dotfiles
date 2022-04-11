@@ -5,5 +5,9 @@ alias ky='kubectl -o yaml'
 alias kx='kubectx'
 alias kns='kubens'
 
+alias mk='minikube'
+
 complete -F __start_kubectl k kj kw ky
 complete -F _kube_contexts kx
+
+complete -F __start_minikube mk
