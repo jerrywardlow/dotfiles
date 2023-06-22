@@ -118,3 +118,8 @@ set foldlevelstart=99
 augroup sops
     autocmd BufRead,BufNewFile *.yaml,*.yml silent! global/sops\:/foldclose | normal gg
 augroup END
+
+augroup values_yaml
+    au!
+    autocmd BufNewFile,BufRead *.values set syntax=yaml
+augroup END
