@@ -8,9 +8,9 @@ alias agg='ag -g'
 
 alias dirs='dirs -v'
 
+alias ls='ls --color --almost-all --group-directories-first'
 alias ll='ls -ahl'
 alias l='ll'
-alias ls='ls --color --almost-all'
 
 alias tf='terraform'
 
